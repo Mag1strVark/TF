@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import s from './App.css'
+import Navigation from './components/Navigation/Navigation'
+import Hero from './components/Main/Hero'
+import SubPage from './components/SubPage/SubPage'
+import Delivery from './components/Delivery/Delivery'
+import Feedback from './components/Feedback/Feedback'
+import Footer from './components/Footer/Footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(props) {
+    return (
+        <div className={s.app}>
+            <Navigation/>
+            <Hero/>
+            <SubPage listData={props.appState.listData}/>
+            <Delivery/>
+            <Feedback feedbackData={props.appState.feedbackData}/>
+            <Footer/>
+        </div>
+    )
 }
 
-export default App;
+export default App
