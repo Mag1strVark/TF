@@ -7,7 +7,7 @@ const Feedback = (props) => {
     const feedback = props.feedbackData.map(item => <FeedBackElements title={item.title} text={item.text}/>)
 
     return (
-        <div className={s.container}>
+        <section className={s.container} id='feedback'>
             <div className={s.title}>
                 <h2>Спасибо за обратную связь</h2>
             </div>
@@ -23,7 +23,7 @@ const Feedback = (props) => {
                     <button>Написать</button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

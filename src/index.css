@@ -12,7 +12,9 @@ body{
   font-family: 'Caviar Dreams';
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* Указываем box sizing */
 *,

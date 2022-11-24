@@ -5,7 +5,7 @@ import { IoIosListBox } from "react-icons/io";
 
 const Delivery = () => {
     return (
-        <div className={s.container}>
+        <section className={s.container} id='delivery'>
             <div className={s.module}>
                 <div className={s.icon}>
                     <p><IoIosListBox/></p>
@@ -33,7 +33,7 @@ const Delivery = () => {
                     <p>Все длля вашего удобства</p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

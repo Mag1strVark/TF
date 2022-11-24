@@ -5,12 +5,12 @@ const Footer = () => {
     return (
         <div className={s.container}>
             <div className={s.logo}>
-                <p>TF</p>
+                <a href='#'>ТF</a>
             </div>
             <div className={s.elements}>
-                <p>Ассортимент</p>
-                <p>Доставка</p>
-                <p>Отзывы</p>
+                <a href='#sort'>Ассортимент</a>
+                <a href='#delivery'>Доставка</a>
+                <a href='#feedback'>Отзывы</a>
             </div>
             <div className={s.copyright}>
                 <p>© TF, Inc. 2022.</p>
