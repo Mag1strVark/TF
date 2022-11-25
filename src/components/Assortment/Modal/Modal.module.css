@@ -11,7 +11,7 @@
     z-index: 1;
     opacity: 0;
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .container_active{
@@ -26,7 +26,7 @@
     left: 0;
     z-index: 1;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .content{
@@ -79,4 +79,18 @@
     width: 80%;
     height: 80%;
     font-size: 17px;
+}
+
+.close{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: white;
+}
+
+.close button{
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: 20px;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './Modal.module.css'
+import { HiOutlineX } from "react-icons/hi";
 
 const Modal = ({active, setActive, img, title, text}) => {
     return (
@@ -9,6 +10,9 @@ const Modal = ({active, setActive, img, title, text}) => {
                     <img src={img} alt="icon"/>
                 </div>
                 <div className={s.decoration}>
+                    <div className={s.close}>
+                        <button onClick={() => setActive(false)}><HiOutlineX/></button>
+                    </div>
                         <div className={s.title}>
                             <h3>{title}</h3>
                         </div>
