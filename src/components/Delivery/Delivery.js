@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Delivery.module.css'
-import { IoIosListBox } from "react-icons/io";
+import { CiDeliveryTruck, CiBadgeDollar, CiCircleInfo } from "react-icons/ci";
 
 
 const Delivery = () => {
@@ -8,7 +8,7 @@ const Delivery = () => {
         <section className={s.container} id='delivery'>
             <div className={s.module}>
                 <div className={s.icon}>
-                    <p><IoIosListBox/></p>
+                    <p><CiDeliveryTruck/></p>
                 </div>
                 <div className={s.text}>
                     <h3>Доставка</h3>
@@ -17,7 +17,7 @@ const Delivery = () => {
             </div>
             <div className={s.module}>
                 <div className={s.icon}>
-                    <p><IoIosListBox/></p>
+                    <p><CiBadgeDollar/></p>
                 </div>
                 <div className={s.text}>
                     <h3>Оплата</h3>
@@ -26,7 +26,7 @@ const Delivery = () => {
             </div>
             <div className={s.module}>
                 <div className={s.icon}>
-                    <p><IoIosListBox/></p>
+                    <p><CiCircleInfo/></p>
                 </div>
                 <div className={s.text}>
                     <h3>Как заказать</h3>
